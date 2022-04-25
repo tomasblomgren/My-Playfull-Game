@@ -1,4 +1,4 @@
-/* --------- Global style */
+/* --------- Global style 
 
 body {
     background-color: white;
@@ -7,7 +7,7 @@ body {
     text-align: center;
 }
 
-/* --------- Heading */
+/* --------- Heading 
 
 .heading {
     text-align: center;
@@ -19,7 +19,7 @@ body {
     padding-right: 5px;
 }
 
-/* --------- Game layout */
+/* --------- Game layout 
 
 .game-area {
     background-color: #E6ECF0;
@@ -84,7 +84,7 @@ body {
     padding: 25px;
 }
 
-/* --------- Buttons */
+/* --------- Buttons 
 
 .btn {
     width: 220px;
@@ -167,7 +167,7 @@ body {
     background-color: #0d1013;
 }
 
-/* --------- Media queries */
+/* --------- Media queries 
 
 @media (max-width: 414px) {
     .controls-area {
