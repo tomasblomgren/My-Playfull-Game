@@ -12,26 +12,37 @@
 
     <img class= "logo" src="assets/images/blackjack pic 1.png" alt="logo">
    
-    <div class="game-area"></div>
+    <div class="rungame">
+        
+    </div>
+
+        
+    <div class="game-area">
+
+        <button  id="startgame" data-type="testbutton" class="btn btn--big">
+            <i class="fas fa-plus">Start Game!</i>
+        </button>
+    </div>
     <div class="controls-area">
-        <button data-type="Hit" class="btn btn--big btn--green">
+        
+        <button id ="hit" data-type="Hit" class="btn btn--big btn--green">
             <i class="fas fa-plus">Hit</i>
         </button>
-        <button data-type="Stay" class="btn btn--big btn--blue">
+        <button id="nomorecards" data-type="Stay" class="btn btn--big btn--blue">
             <i class="fas fa-minus">Stay</i>
         </button>
-        <button data-type="Split" class="btn btn--big btn--orange">
+        <button id="divideamount" data-type="Split" class="btn btn--big btn--orange">
             <i class="fas fa-times">Split</i>
         </button>
-        <button data-type="shuffle cards" class="btn btn--big btn--red">
+        <button id="randomisecars" data-type="shuffle cards" class="btn btn--big btn--red">
             <i class="fas fa-divide">Shuffle cards</i>
         </button>
     </div>
 
     <div class="deck"></div>
     
-    <button data-type="reset game" class="btn btn--big btn-- green">
-        <i class="">Reset game</i>
+    <button data-type="Restart game" class="btn btn--big btn-- green">
+        <i class="">Restart game</i>
     </button>
 
     <div class="score-area"></div>
