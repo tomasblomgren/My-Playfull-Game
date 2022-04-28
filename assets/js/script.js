@@ -1,3 +1,16 @@
+/*defining deck of cards*/
+const a = 1
+const b = 2
+const c = 3
+const d = 4
+const e = 5
+const f = 6
+const g = 7
+const h = 8
+const i = 9
+const j = 10
+let k = 11
+
 /* adding Eventlisteners and DOM*/
 
 
@@ -8,28 +21,14 @@ var content = document.getElementById("content");
 var button = document.getElementById("rungame");
 var startButton = document.getElementById("startgame");
 startButton.addEventListener("click", rungame);
-for (let button of buttons) {
-    button.addEventListener("click", function(){
-        if (this.getAttribute("data-type")=== "submit") {
-            alert("you clicked sumbit!");
-        } 
-    })
-}
-})
+
+});
 
 function rungame() {
 console.log("gameshouldstart");    
 
 }
- 
 
-function gamearea() {
-document.getElementById("gamearea").addEventListener("click",function(gamearea)
-
-{ 
-    console.log("gamearea clicked");
-});
-}
 
 document.addEventListener ("DOMContentLoaded", function (){
     let buttons = document.getElementsByTagName ("button");
@@ -72,7 +71,7 @@ document.addEventListener ("DOMContentLoaded", function (){
 
 
 function split () {
-console.log("divide full amount")    
+console.log("divide full amount and no more cards allowed")    
 }
 
 
@@ -95,11 +94,25 @@ document.addEventListener ("DOMContentLoaded", function (){
         startButton.addEventListener("click", shufflecards);
         
         });
-    
-    
+
     function shufflecards () {
     console.log("shuffles cards");
     }
+    
+    document.addEventListener ("DOMContentLoaded", function (){
+        let buttons = document.getElementsByTagName ("button");
+        var content = document.getElementById("content");
+        var button = document.getElementById("restartgame");
+        var startButton = document.getElementById("resetgamearea");
+        startButton.addEventListener("click", restartgame);
+        
+        });
+
+    function restartgame () {
+    console.log("resetsallactions");
+    }
+
+
 
 document.addEventListener ("DOMContentLoaded", function (){
     let buttons = document.getElementsByTagName ("button");
@@ -107,14 +120,8 @@ document.addEventListener ("DOMContentLoaded", function (){
     var button = document.getElementById("card");
     var startButton = document.getElementById("hit");
     startButton.addEventListener("click", card);
-    for (let button of buttons) {
-        button.addEventListener("click", function(){
-            if (this.getAttribute("data-type")=== "submit") {
-                alert("you clicked submit!");
-            } 
-        })
-    }
-    })
+    
+    });
 function addround () {
     
 }
@@ -124,14 +131,8 @@ document.addEventListener ("DOMContentLoaded", function (){
     var button = document.getElementById("card");
     var startButton = document.getElementById("hit");
     startButton.addEventListener("click", card);
-    for (let button of buttons) {
-        button.addEventListener("click", function(){
-            if (this.getAttribute("data-type")=== "submit") {
-                alert("you clicked submit!");
-            } 
-        })
-    }
-    })
+    
+    });
 function endgame () {
     
 }
@@ -141,14 +142,8 @@ document.addEventListener ("DOMContentLoaded", function (){
     var button = document.getElementById("card");
     var startButton = document.getElementById("hit");
     startButton.addEventListener("click", card);
-    for (let button of buttons) {
-        button.addEventListener("click", function(){
-            if (this.getAttribute("data-type")=== "submit") {
-                alert("you clicked submit!");
-            } 
-        })
-    }
-    })
+    
+    });
     
 function calculatewinner () {
     
@@ -159,15 +154,9 @@ document.addEventListener ("DOMContentLoaded", function (){
     var button = document.getElementById("card");
     var startButton = document.getElementById("hit");
     startButton.addEventListener("click", card);
-    for (let button of buttons) {
-        button.addEventListener("click", function(){
-            if (this.getAttribute("data-type")=== "submit") {
-                alert("you clicked submit!");
-            } 
-        })
-    }
-    })
+    
+    });
 function losegame () {
     
 }
-
+    
