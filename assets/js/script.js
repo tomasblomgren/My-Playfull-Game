@@ -1,25 +1,13 @@
 
 /*defining deck of cards*/
-class blackjack {
-
-
+/*class blackjack {
+card new string[12];
+suits = ["H", "S", "D", "C"];
 }
+*/
 
-
-card = c;
-card [0] = "A";
-card [1] = "2";
-card [2] = "3";
-card [3] = "4";
-card [4] = "5";
-card [5] = "6";
-card [6] = "7";
-card [7] = "8";
-card [8] = "9";
-card [9] = "10";
-card [10] = "J";
-card [11] = "Q";
-card [12] = "K";
+var suits = ["spades", "diamonds", "clubs", "hearts"];
+var values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
 
 
 /*defining game setup*/
@@ -27,7 +15,21 @@ class blackjack {
 
 
 }
+function getDeck()
+{
+	let deck = new Array();
 
+	for(let i = 0; i < suits.length; i++)
+	{
+		for(let x = 0; x < values.length; x++)
+		{
+			let card = {Value: values[x], Suit: suits[i]};
+			deck.push(card);
+		}
+	}
+
+	return deck;
+}
 
 /* adding Eventlisteners and DOM*/
 
@@ -108,9 +110,20 @@ document.addEventListener ("DOMContentLoaded", function (){
         startButton.addEventListener("click", shufflecards);    
         });
 
-    function shufflecards () {
-    console.log("shuffles cards");
-    }
+        function shufflecards (deck)
+        {
+            // for 1000 turns
+            // switch the values of two random cards
+            for (let i = 0; i < 1000; i++)
+            {
+                let location1 = Math.floor((Math.random() * deck.length));
+                let location2 = Math.floor((Math.random() * deck.length));
+                let tmp = deck[location1];
+        
+                deck[location1] = deck[location2];
+                deck[location2] = tmp;
+            }
+        }
     
     document.addEventListener ("DOMContentLoaded", function (){
         let buttons = document.getElementsByTagName ("button");
