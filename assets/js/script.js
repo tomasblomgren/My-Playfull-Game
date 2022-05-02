@@ -22,15 +22,13 @@ function renderDeck(deck)
 
 
 /*defining deck of cards*/
-
 var suits = ["spades", "diamonds", "clubs", "hearts"];
 var values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
 /*Values and suits for each card */
 var deck = [{Value: 'A', Suit: 'Spades'}, {Value: 'A', Suit: 'Diamonds'}, {Value: 'A', Suit: 'Clubs'}, {Value: 'A', Suit: 'Hearts'}, { Value: '2', Suit: 'Spades'},{ Value: '2', Suit: 'Diamonds'},{ Value: '2', Suit: 'Clubs'},{ Value: '2', Suit: 'Hearts'},{ Value: '3', Suit: 'Spades'},{ Value: '3', Suit: 'Diamonds'},{ Value: '3', Suit: 'Clubs'},{ Value: '4', Suit: 'Hearts'},{ Value: '5', Suit: 'Spades'},{ Value: '5', Suit: 'Diamonds'},{ Value: '5', Suit: 'Clubs'},{ Value: '5', Suit: 'Hearts'},{ Value: '6', Suit: 'Spades'},{ Value: '6', Suit: 'Diamonds'},{ Value: '6', Suit: 'Clubs'},{ Value: '6', Suit: 'Hearts'},{ Value: '7', Suit: 'Spades'},{ Value: '7', Suit: 'Diamonds'},{ Value: '7', Suit: 'Clubs'},{ Value: '7', Suit: 'Hearts'},{ Value: '8', Suit: 'Spades'},{ Value: '8', Suit: 'Diamonds'},{ Value: '8', Suit: 'Clubs'},{ Value: '8', Suit: 'Hearts'},{ Value: '9', Suit: 'Spades'},{ Value: '9', Suit: 'Diamonds'},{ Value: '9', Suit: 'Clubs'},{ Value: '9', Suit: 'Hearts'},{ Value: '10', Suit: 'Spades'},{ Value: '10', Suit: 'Diamonds'},{ Value: '10', Suit: 'Clubs'},{ Value: '10', Suit: 'Hearts'},{ Value: 'J', Suit: 'Spades'},{ Value: 'J', Suit: 'Diamonds'},{ Value: 'J', Suit: 'Clubs'},{ Value: 'J', Suit: 'Hearts'},{ Value: 'Q', Suit: 'Spades'},{ Value: 'Q', Suit: 'Diamonds'},{ Value: 'Q', Suit: 'Clubs'},{ Value: 'Q', Suit: 'Hearts'},{ Value: 'K', Suit: 'Spades'},{ Value: 'K', Suit: 'Diamonds'},{ Value: 'K', Suit: 'Clubs'},{ Value: 'K', Suit: 'Hearts'},]
-
+typeof (deck)
 /*defining game setup*/
 class blackjack {
-
 
 }
 function getDeck()
@@ -61,7 +59,7 @@ startButton.addEventListener("click", rungame);
 
 function rungame() {
 console.log("gameshouldstart");    
-
+let buttons = document.getElementsByTagName("card");
 }
 
 document.addEventListener ("DOMContentLoaded", function (){
@@ -85,15 +83,16 @@ document.addEventListener ("DOMContentLoaded", function (){
     });
     
 
-function card (deck) {
+function card () {
   // Creates a random number between 1 and 11
   
-  let num1 = Math.floor(Math.random() * 11) + 1;
-  let num2 = Math.floor(Math.random() * 11) + 1;
+  let num1 = Math.floor(Math.random(deck) * 11) + 1;
+  let num2 = Math.floor(Math.random(deck) * 11) + 1; 
+  
 
   
-console.log("recieve card")
-}
+console.log(num1,num2);
+};
 
 document.addEventListener ("DOMContentLoaded", function (){
     let buttons = document.getElementsByTagName ("button");
