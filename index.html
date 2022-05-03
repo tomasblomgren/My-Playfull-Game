@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" src="main-js">
     <title>Document</title>
 </head>
 <body>
    <h1 class="heading"></h1> 
 
     <img class= "logo" src="assets/images/blackjack pic 1.png" alt="logo">
-   
+   <div id="controls-area></div>
     <div class="rungame">
         
     </div>
@@ -23,7 +23,7 @@
             <i class="fas fa-plus">Start Game!</i>
         </button>
     </div>
-    <div class="controls-area">
+    
         
         <button id ="hit" data-type="Hit" class="btn btn--big btn--green">
             <i class="fas fa-plus">Hit</i>
@@ -34,13 +34,16 @@
         <button id="divideamount" data-type="Split" class="btn btn--big btn--orange">
             <i class="fas fa-times">Split</i>
         </button>
-        <h1>A deck of cards</h1>
+        
         <button href="javascript:void(0)" id="randomisecards" data-type="shuffle cards" onloadstart="shufflecards()"; class="btn btn--big btn--red">
             <i class="fas fa-divide">Shuffle cards</i>
         </button>
     </div>
 
-    <div id="deck"></div>
+    <div id="deck">
+        
+
+    </div>
     
     <button id="resetgamearea" data-type="Restart game" class="btn btn--big btn-- green">
         <i class="fas fa-divide">Restart game</i>

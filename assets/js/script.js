@@ -19,27 +19,36 @@ function renderDeck(deck)
 		document.getElementById("deck").appendChild(card);
 	}
 }
-
+ 
 
 /*defining deck of cards*/
-var suits = ["spades", "diamonds", "clubs", "hearts"];
-var values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
-/*Values and suits for each card */
-var deck = [{Value: 'A', Suit: 'Spades'}, {Value: 'A', Suit: 'Diamonds'}, {Value: 'A', Suit: 'Clubs'}, {Value: 'A', Suit: 'Hearts'}, { Value: '2', Suit: 'Spades'},{ Value: '2', Suit: 'Diamonds'},{ Value: '2', Suit: 'Clubs'},{ Value: '2', Suit: 'Hearts'},{ Value: '3', Suit: 'Spades'},{ Value: '3', Suit: 'Diamonds'},{ Value: '3', Suit: 'Clubs'},{ Value: '4', Suit: 'Hearts'},{ Value: '5', Suit: 'Spades'},{ Value: '5', Suit: 'Diamonds'},{ Value: '5', Suit: 'Clubs'},{ Value: '5', Suit: 'Hearts'},{ Value: '6', Suit: 'Spades'},{ Value: '6', Suit: 'Diamonds'},{ Value: '6', Suit: 'Clubs'},{ Value: '6', Suit: 'Hearts'},{ Value: '7', Suit: 'Spades'},{ Value: '7', Suit: 'Diamonds'},{ Value: '7', Suit: 'Clubs'},{ Value: '7', Suit: 'Hearts'},{ Value: '8', Suit: 'Spades'},{ Value: '8', Suit: 'Diamonds'},{ Value: '8', Suit: 'Clubs'},{ Value: '8', Suit: 'Hearts'},{ Value: '9', Suit: 'Spades'},{ Value: '9', Suit: 'Diamonds'},{ Value: '9', Suit: 'Clubs'},{ Value: '9', Suit: 'Hearts'},{ Value: '10', Suit: 'Spades'},{ Value: '10', Suit: 'Diamonds'},{ Value: '10', Suit: 'Clubs'},{ Value: '10', Suit: 'Hearts'},{ Value: 'J', Suit: 'Spades'},{ Value: 'J', Suit: 'Diamonds'},{ Value: 'J', Suit: 'Clubs'},{ Value: 'J', Suit: 'Hearts'},{ Value: 'Q', Suit: 'Spades'},{ Value: 'Q', Suit: 'Diamonds'},{ Value: 'Q', Suit: 'Clubs'},{ Value: 'Q', Suit: 'Hearts'},{ Value: 'K', Suit: 'Spades'},{ Value: 'K', Suit: 'Diamonds'},{ Value: 'K', Suit: 'Clubs'},{ Value: 'K', Suit: 'Hearts'},]
+var suits = ["Spades", "Diamonds", "Clubs", "Hearts"];
+var values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]; 
+var gameDeck = {};
+/*Values and suits for each card*/
 typeof (deck)
+K = 10;
+A = 10;
+J = 10;
+A = 1 && 11;
 /*defining game setup*/
 class blackjack {
-
+    
 }
+
+function generateDeck(){
+    gameDeck = getDeck();
+}
+
 function getDeck()
 {
 	let deck = new Array();
 
-	for(let i = 0; i < suits.length; i++)
+	for(let index = 0; index < suits.length; index++)
 	{
-		for(let x = 0; x < values.length; x++)
+		for(let valueindex = 0; valueindex < values.length; valueindex++)
 		{
-			let card = {Value: values[x], Suit: suits[i]};
+			let card = {Value: values[valueindex], Suit: suits[index]};
 			deck.push(card);
 		}
 	}
@@ -60,6 +69,7 @@ startButton.addEventListener("click", rungame);
 function rungame() {
 console.log("gameshouldstart");    
 let buttons = document.getElementsByTagName("card");
+generateDeck();
 }
 
 document.addEventListener ("DOMContentLoaded", function (){
@@ -83,20 +93,25 @@ document.addEventListener ("DOMContentLoaded", function (){
     });
     
 
+function showCard(card){
+    const imagePath = './assets/images/'+ card.Suit + '/' + card.Value + '.png';
+    const image = '<img src="' + imagePath + '" />';
+    document.getElementById('deck').innerHTML += image;
+    console.log(imagePath);
+}
+
 function card () {
   // Creates a random number between 1 and 11
-  
-  let num1 = Math.floor(Math.random(deck) * 11) + 1;
-  let num2 = Math.floor(Math.random(deck) * 11) + 1; 
-  
-
-  
-console.log(num1,num2);
+  let num1 = Math.floor(Math.random() * 50) + 1;
+  let num2 = Math.floor(Math.random() * 50) + 1; 
+  let num3 = (num1 + num2) / 2;
+  showCard(gameDeck[num1]);
+  showCard(gameDeck[num2]);
 };
 
 document.addEventListener ("DOMContentLoaded", function (){
     let buttons = document.getElementsByTagName ("button");
-    var content = document.getElementById("content");
+    var content = document.getElementById("content"); 
     var button = document.getElementById("split");
     var startButton = document.getElementById("divideamount");
     startButton.addEventListener("click", split);
@@ -104,7 +119,7 @@ document.addEventListener ("DOMContentLoaded", function (){
 
 
 function split () {
-console.log("divide full amount and no more cards allowed")    
+console.log("dividetotalamountby2");    
 }
 
 
@@ -115,9 +130,13 @@ document.addEventListener ("DOMContentLoaded", function (){
     var startButton = document.getElementById("hit");
     startButton.addEventListener("click", givepoint);
     });
-
+/**
+ * Gives points to either player and increments by 1
+ */
     function givepoint () {
-
+   /*
+   *on endgame gives point
+    */
     }
     document.addEventListener ("DOMContentLoaded", function (){
         let buttons = document.getElementsByTagName ("button");
@@ -151,7 +170,7 @@ document.addEventListener ("DOMContentLoaded", function (){
         startButton.addEventListener("click", restartgame);
         
         });
-
+    
     function restartgame () {
     console.log("resetallactions");
     }
@@ -164,7 +183,8 @@ document.addEventListener ("DOMContentLoaded", function (){
     startButton.addEventListener("click", card);    
     });
 function addround () {
-    
+   /*let oldscore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score-area").innerText = ++oldscore;*/ 
 }
 document.addEventListener ("DOMContentLoaded", function (){
     let buttons = document.getElementsByTagName ("button");

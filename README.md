@@ -15,4 +15,7 @@ If the house has a hand with the same value as you the house wins the round
 To win the game you must play the best of 3
 Enjoy!
 
+
 /*content,sources,media,screenshots*/
+
+card image link "https://www.google.com/search?q=full+card+deck+images&rlz=1C1CHBF_svSE976SE977&sxsrf=ALiCzsbyA15S9KxESExN_6OFdBBpb3_-kw:1651597068468&tbm=isch&source=iu&ictx=1&vet=1&fir=mQq5jsD93UU8PM%252CetLJpnFfrlBteM%252C_%253B9TuLlzOPh07LbM%252CWeT4BLRFbFB49M%252C_%253B4I4tsLXUNkZPrM%252CvjJ8GVxr9qtp6M%252C_%253BokVCHjrEI2r49M%252CbCmR3h4X_uocCM%252C_%253BQx4K2EN4aaNiHM%252CIH2m5Ps0xne62M%252C_%253BEvxHa9vKTSTCeM%252CWQBu45TBHS-_DM%252C_%253BgCPrFM3J0ip11M%252CXYerAoNohlLyvM%252C_%253BNDvTLxa1og5SrM%252CDJ0RRH3k82aSWM%252C_%253B3tL_KpuCwgF5eM%252ChhHC9DLRsrvFjM%252C_%253BEhR9eLZEeZ6htM%252CiIhHqJKwAF1czM%252C_%253BCOZHo0Z5efpxxM%252Cl-Qp6lvGOmXerM%252C_%253Bz5vU0JS66_NlAM%252CRQKoBq_Rpb7maM%252C_&usg=AI4_-kR0-KJWwiXhp6aKlPhMeWjB8RLG9A&sa=X&ved=2ahUKEwiSy8_E5sP3AhVNEncKHZ7OCuQQ9QF6BAgOEAE&biw=1536&bih=746&dpr=1.25#imgrc=EvxHa9vKTSTCeM"
