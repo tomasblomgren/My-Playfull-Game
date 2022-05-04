@@ -168,6 +168,15 @@ body {
 }
 
 /* --------- Media queries */
+body {
+    text-align: center;
+}
+
+#dealer-cards img {
+    height: 175px;
+    width: 125px;
+    margin: 1px;
+}
 
 @media (max-width: 414px) {
     .controls-area {
