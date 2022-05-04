@@ -1,3 +1,27 @@
+/*adding point tracking system */
+
+var dealerSum = 0;
+var playerSum = 0;
+
+var dealerAceCount = 0;
+var yourAceCount = 0; // A, 2 + K -> 1 + 2 + 10 
+
+var hidden; 
+var deck;
+
+var canHit = true; /* allows player to draw while yourSum < = 21*/
+
+window.onload = function () {
+    buildDeck ();
+}
+
+function buildDeck (){
+    /*let values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+    let types = ["C", "D", "H", "S"];
+    deck = [];*/
+
+}
+
 /*rendering deck */
 function renderDeck(deck)
 {
@@ -59,12 +83,41 @@ function getDeck()
 /* adding Eventlisteners and DOM*/
 
 document.addEventListener ("DOMContentLoaded", function (){
-let buttons = document.getElementsByTagName ("button");
-var content = document.getElementById("content");
+
+hidden = deck.pop();
+dealerSum += getValue(hidden);
+dealerAceCount += checkAce
+console.log(hidden);
+console.log(dealerSum);
+
 var button = document.getElementById("rungame");
 var startButton = document.getElementById("startgame");
 startButton.addEventListener("click", rungame);
 });
+
+function getValue(card) {
+    let data = card.split("-"); //"4-C" -> ["4", "C"]
+    let value = data[0];
+
+    if (isNaN(value)) {
+    if (value == "A") {
+        return 11;}    
+    }
+return 10;
+}
+{
+return parseInt(value); 
+}
+
+function checkAce(card) {
+    if (card)[0] == "A") {
+        return 1;
+    } {
+        return 0;
+    }
+} 
+
+
 
 function rungame() {
 console.log("gameshouldstart");    
