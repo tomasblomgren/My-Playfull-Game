@@ -178,6 +178,19 @@ body {
     margin: 1px;
 }
 
+#hit {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+
+#nomorecards {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+/* --------- Media queries */
+
 @media (max-width: 414px) {
     .controls-area {
         width: 100%;

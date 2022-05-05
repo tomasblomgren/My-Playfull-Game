@@ -1,0 +1,28 @@
+skapar kortleken
+
+function renderDeck(deck)
+{
+      document.getElementById("deck").innerHTML = "";
+
+	for(let i = 0; i < deck.length; i++)
+	{
+		let card = document.createElement("div");
+		let value = document.createElement("div");
+		let suit = document.createElement("div");
+		card.className = "card";
+		value.className = "value";
+		suit.className = "suit " + deck[i].Suit;
+
+		value.innerHTML = deck[i].Value;
+		card.appendChild(value);
+		card.appendChild(suit);
+
+		document.getElementById("deck").appendChild(card);
+	}
+}
+ 
+startgame knapp
+
+ <button href="javascript:void(0)" id="randomisecards" data-type="shuffle cards" onloadstart="shufflecards()"; class="btn btn--big btn--red">
+            <i class="fas fa-divide"></i>
+        </button>
