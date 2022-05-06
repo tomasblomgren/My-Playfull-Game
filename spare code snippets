@@ -21,8 +21,16 @@ function renderDeck(deck)
 	}
 }
  
-startgame knapp
+startgame knapp i html 
 
  <button href="javascript:void(0)" id="randomisecards" data-type="shuffle cards" onloadstart="shufflecards()"; class="btn btn--big btn--red">
             <i class="fas fa-divide"></i>
         </button>
+
+
+		button knapp i js (parad ihop med denna^)
+
+		var button = document.getElementById("shufflecards");
+        var startButton = document.getElementById("randomisecards");
+        startButton.addEventListener("click", shufflecards);    
+        });

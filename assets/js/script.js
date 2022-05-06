@@ -30,15 +30,7 @@ function buildDeck() {
     console.log(deck); 
 }
 
-function shuffleDeck() {
-    for (let i = 0; i < deck.length; i++) {
-        let j = Math.floor(Math.random() * deck.length); // (0-1) * 52 = => (0-51.9999)
-        let temp = deck[i];
-        deck[i] = deck[j];
-        deck[j] = temp;
-    }
-    console.log(deck);
-}
+
 
 /*defining deck of cards*/
 var suits = ["Spades", "Diamonds", "Clubs", "Hearts"];
@@ -79,39 +71,10 @@ function getDeck()
 
 document.addEventListener ("DOMContentLoaded", function (){
 
-hidden = deck.pop();
-dealerSum += getValue(hidden);
-dealerAceCount += checkAce(hidden);
-console.log(hidden);
-console.log(dealerSum);
-
 var button = document.getElementById("rungame");
 var startButton = document.getElementById("startgame");
 startButton.addEventListener("click", rungame);
 });
-
-function getValue(card) {
-    let data = card.split("-"); //"4-C" -> ["4", "C"]
-    let value = data[0];
-
-    if (isNaN(value)) { // A J Q K 
-    if (value == "A") {
-        return 11;
-        }    
-    
-    return 10;
-  }
-return parseInt(value);
-}
-
-function checkAce(card) {
-    if (card[0] == "A") {
-        return 1;
-    } 
-    {
-        return 0;
-    }
-} 
 
 
 
@@ -183,16 +146,10 @@ document.addEventListener ("DOMContentLoaded", function (){
  * Gives points to either player and increments by 1
  */
     function givepoint () {
-   /*
-   *on endgame gives point
-    */
+   
     }
-    document.addEventListener ("DOMContentLoaded", function (){
+   
         
-        var button = document.getElementById("shufflecards");
-        var startButton = document.getElementById("randomisecards");
-        startButton.addEventListener("click", shufflecards);    
-        });
 
         function shufflecards (deck)
         {
@@ -211,8 +168,7 @@ document.addEventListener ("DOMContentLoaded", function (){
         }
     
     document.addEventListener ("DOMContentLoaded", function (){
-        let buttons = document.getElementsByTagName ("button");
-        var content = document.getElementById("content");
+        
         var button = document.getElementById("restartgame");
         var startButton = document.getElementById("resetgamearea");
         startButton.addEventListener("click", restartgame);
@@ -224,48 +180,76 @@ document.addEventListener ("DOMContentLoaded", function (){
     }
 
 document.addEventListener ("DOMContentLoaded", function (){
-    let buttons = document.getElementsByTagName ("button");
-    var content = document.getElementById("content");
+    
     var button = document.getElementById("card");
     var startButton = document.getElementById("hit");
     startButton.addEventListener("click", card);    
     });
+
 function addround () {
    /*let oldscore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score-area").innerText = ++oldscore;*/ 
 }
 document.addEventListener ("DOMContentLoaded", function (){
-    let buttons = document.getElementsByTagName ("button");
-    var content = document.getElementById("content");
-    var button = document.getElementById("card");
+    
+    var button = document.getElementById("");
     var startButton = document.getElementById("hit");
     startButton.addEventListener("click", card);
     });
 
-function endgame () {
-    
+
+
+
+
+
+function shuffleDeck() {
+    for (let i = 0; i < deck.length; i++) {
+        let j = Math.floor(Math.random() * deck.length); // (0-1) * 52 = => (0-51.9999)
+        let temp = deck[i];
+        deck[i] = deck[j];
+        deck[j] = temp;
+    }
+    console.log(deck);
 }
 
-document.addEventListener ("DOMContentLoaded", function (){
-    let buttons = document.getElementsByTagName ("button");
-    var content = document.getElementById("content");
-    var button = document.getElementById("card");
-    var startButton = document.getElementById("hit");
-    startButton.addEventListener("click", card);
-    });
+function startGame() {
+hidden = deck.pop();
+dealerSum += getValue(hidden);
+dealerAceCount += checkAce(hidden);
+//console.log(hidden);//
+//console.log(dealerSum);//
+while (dealerSum < 17) {
     
+    let cardImg = document.createElement("img");
+}
+
+}
+
+function getValue(card) {
+    let data = card.split("-"); //"4-C" -> ["4", "C"]
+    let value = data[0];
+
+    if (isNaN(value)) { // A J Q K 
+    if (value == "A") {
+        return 11;
+        }    
+    
+    return 10;
+  }
+return parseInt(value);
+}
+
+function checkAce(card) {
+    if (card[0] == "A") {
+        return 1;
+    } 
+    {
+        return 0;
+    }
+} 
+
+
+
 function calculatewinner () {
-    
-}
-
-document.addEventListener ("DOMContentLoaded", function (){
-    let buttons = document.getElementsByTagName ("button");
-    var content = document.getElementById("content");
-    var button = document.getElementById("card");
-    var startButton = document.getElementById("hit");
-    startButton.addEventListener("click", card);
-    });
-
-function losegame () {
     
 }
