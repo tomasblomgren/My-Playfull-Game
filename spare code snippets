@@ -34,3 +34,35 @@ startgame knapp i html
         var startButton = document.getElementById("randomisecards");
         startButton.addEventListener("click", shufflecards);    
         });
+
+		split knapp i <html>
+
+		<button id="divideamount" data-type="Split" class="btn btn--big btn--orange">
+            <i class="fas fa-times">Split</i>
+        </button>
+
+
+		split i javascript
+		document.addEventListener ("DOMContentLoaded", function (){
+			let buttons = document.getElementsByTagName ("button");
+			var content = document.getElementById("content"); 
+			var button = document.getElementById("split");
+			var startButton = document.getElementById("divideamount");
+			startButton.addEventListener("click", split);
+			});
+		
+		
+		function split () {
+		console.log("dividetotalamountby2");    
+		}
+
+		score area for html layout
+
+		<div class="score-area"></div>
+    <p class="scores">Round <span id="rounds">0</span></p>
+    <p class="scores">CPU</p><span id="CPU">0</span></p>
+    <p class="scores">Player</p><span id="player">0</span></p>
+
+	<div class="rungame">
+        
+	</div>

@@ -5,63 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css" src="main-js">
-    <title>Document</title>
+    <title>BlackJack</title>
 </head>
+
+
 <body>
-   <h1 class="heading"></h1> 
     <h2>Dealer: <span id="dealer-sum"> </span></h2>
     <div id="dealer-cards">
-        <img id="hidden" src="assets/images/card deck backside1.jpg" alt="">
-
+        <img id="hidden" src="assets/images/card deck backside1.jpg">
     </div>
+    <p id="results"></p>
     <h2>Player: <span id="player-sum"></span></h2>
     <div id="player-cards"></div>
    <div id="controls-area"></div>
+   <div class="game-area">  
+</div>
 
    <br>
 
-   <p id="results"></p>
-    <div class="rungame">
-        
-    </div>
-
-        
-    <div class="game-area">
-
-        <button  id="startgame" data-type="testbutton" class="btn btn--big">
-            <i class="fas fa-plus">Start Game!</i>
-        </button>
-    </div>
+   <div id="deck"></div>
     
-        
+
+
         <button id ="hit" data-type="Hit" class="btn btn--big btn--green">
             <i class="fas fa-plus">Hit</i>
         </button>
         <button id="nomorecards" data-type="Stay" class="btn btn--big btn--blue">
-            <i class="fas fa-minus">Stay</i>
-        </button>
-        <button id="divideamount" data-type="Split" class="btn btn--big btn--orange">
-            <i class="fas fa-times">Split</i>
-        </button>
-        
-        
+            <i>Stay</i>
+        </button>   
+   
     </div>
 
-    <div id="deck">
-        
-
-    </div>
-    
+    <button  id="startgame" data-type="testbutton" class="btn btn--big">
+        <i class="fas fa-plus">Start Game!</i>
+    </button>
     <button id="resetgamearea" data-type="Restart game" class="btn btn--big btn-- green">
         <i class="fas fa-divide">Restart game</i>
     </button>
-
-    <div class="score-area"></div>
-    <p class="scores">Round <span id="rounds">0</span></p>
-    <p class="scores">CPU</p><span id="CPU">0</span></p>
-    <p class="scores">Player</p><span id="player">0</span></p>
-
-
 
     <script src="assets/js/script.js"></script>
 </body>
