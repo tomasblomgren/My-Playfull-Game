@@ -66,3 +66,8 @@ startgame knapp i html
 	<div class="rungame">
         
 	</div>
+
+
+	let num2 = Math.floor(Math.random() * 50) + 1; 
+
+	showCard(gameDeck[num2]);
