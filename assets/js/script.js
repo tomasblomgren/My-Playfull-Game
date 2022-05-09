@@ -10,14 +10,15 @@ var deck;
 
 var canHit = true; //allows the player (you) to draw while yourSum <= 21
 
-/*const imagePath = './assets/images/'+ card.Suit + '/' + card.Value + '.png';
-    const image = '<img src="' + imagePath + '" />';*/
+/*applies these functions onloading the screen */
 
 window.onload = function() {
     buildDeck();
     shuffleDeck();
     startGame();
 };
+
+
 
 function buildDeck() {
     let values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
@@ -26,10 +27,10 @@ function buildDeck() {
 
     for (let i = 0; i < types.length; i++) {
         for (let j = 0; j < values.length; j++) {
-            deck.push(values[j] + "-" + types[i]); //A-C -> K-C, A-D -> K-D
+            deck.push(values[j] + "-" + types[i]); 
         }
     }
-    // console.log(deck);
+   
 }
 
 /*using math.floor to exclude decimal numbers */
@@ -41,7 +42,7 @@ function shuffleDeck() {
         deck[i] = deck[j];
         deck[j] = temp;
     }
-    console.log(deck);
+    //console.log(deck);
 }
 
 function startGame() {
@@ -54,7 +55,7 @@ function startGame() {
         //<img src="./cards/4-C.png">
         let cardImg = document.createElement("img");
         let card = deck.pop();
-        cardImg.src = "./assets/images/Diamonds" + card + ".png";
+        cardImg.src = "/assets/cards/" + card + ".png";
         dealerSum += getValue(card);
         dealerAceCount += checkAce(card);
         document.getElementById("dealer-cards").append(cardImg);
@@ -64,7 +65,7 @@ function startGame() {
     for (let i = 0; i < 2; i++) {
         let cardImg = document.createElement("img");
         let card = deck.pop();
-        cardImg.src = "./assets/images" + card + ".png";
+        cardImg.src = "/assets/cards/" + card + ".png";
         yourSum += getValue(card);
         yourAceCount += checkAce(card);
         document.getElementById("your-cards").append(cardImg);
@@ -83,7 +84,7 @@ function hit() {
 
     let cardImg = document.createElement("img");
     let card = deck.pop();
-    cardImg.src = "./assets/images" + card + ".png";
+    cardImg.src = "/assets/cards/" + card + ".png";
     yourSum += getValue(card);
     yourAceCount += checkAce(card);
     document.getElementById("your-cards").append(cardImg);
@@ -95,13 +96,12 @@ function hit() {
 }
 
 
-
 function stay() {
     dealerSum = reduceAce(dealerSum, dealerAceCount);
     yourSum = reduceAce(yourSum, yourAceCount);
 
     canHit = false;
-    document.getElementById("hidden").src = "./assets/images" + hidden + ".png";
+    document.getElementById("hidden").src = "/assets/cards/" + hidden + ".png";
 
     let message = "";
     if (yourSum > 21) {
@@ -112,7 +112,7 @@ function stay() {
     }
     //both you and dealer <= 21
     else if (yourSum == dealerSum) {
-        message = "Tie!";
+        message = "Draw!";
     }
     else if (yourSum > dealerSum) {
         message = "You Win!";
@@ -120,6 +120,7 @@ function stay() {
     else if (yourSum < dealerSum) {
         message = "You Lose!";
     }
+    
 
     document.getElementById("dealer-sum").innerText = dealerSum;
     document.getElementById("your-sum").innerText = yourSum;
@@ -153,3 +154,13 @@ function reduceAce(playerSum, playerAceCount) {
     }
     return playerSum;
 }
+
+
+    const reloadbutton = document.querySelector("#reload");
+    //Reload everything
+
+function reload() {
+ let reload = location.reload(reset);
+reloadbutton. addEventListener("click", reload, false);
+}
+
