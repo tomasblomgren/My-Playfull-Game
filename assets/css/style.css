@@ -22,7 +22,7 @@ body {
 
 }
 
-.dealer-cards img {
+#dealer-cards img {
     height: 175px;
     width: 125px;
     margin: 1px;
@@ -30,7 +30,7 @@ body {
     border-radius: 15px;
 }
 
-.your-cards img {
+#your-cards img {
     height: 175px;
     width: 125px;
     margin: 1px;
