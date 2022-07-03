@@ -1,36 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css" >
-    <title>BlackJack</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--<link type="text/css" rel="stylesheet" media="all" href="assets/css/style.css" class="theme_css" <title>BlackJack
+    </title>-->
 </head>
+
 <body>
-    <h1>BlackJack</h1>
-    <h2>Dealer: <span id="dealer-sum"></span></h2>
-    <div id="dealer-cards">
-        <img id="hidden" src="/assets/cards/card-deck-backside1.jpg" alt="backside of dealers hidden card">
-</div>
-    <h2>You: <span id="your-sum"></span></h2>
-    <div id="your-cards"></div>
-    <br>
-    <button id="hit">Hit</button>
-    <button id="stay">Stay</button>
-    <p id="results"></p>
-    <button id ="reset" onclick="window.location.reload();">Restart</button>
-    <h3>Rules</h3>
+    <div class="container">
+        <h1>BlackJack</h1>
+        <section>
+            <h2>Dealer: <span class="dealer-sum"></span></h2>
+            <div class="dealer-cards">
+                <img class="hidden" src="/assets/cards/card-deck-backside1.jpg" alt="backside of dealers hidden card">
+            </div>
+        </section>
+        <section>
+            <h2>You: <span class="your-sum"></span></h2>
+            <div class="your-cards"></div>
+        </section>
+        <div class="interactions">
+            <button class="hit">Hit</button>
+            <button class="stay">Stay</button>
+
+            <p class="results"></p>
+            <button class="reset" onclick="window.location.reload();">Restart</button>
+
+        </div>
+        <div class="buttonsforgame">
+            <button>Startgame</button>
+            <button>Rules</button>
+            <button>Help</button>
+        </div>
+        <footer>
+            <h3>Rules</h3>
+            <p class="rulesexplained"><strong>
+                    To win this game you cannot get a total sum above 21.
+                    The numbered cards are their normal value.
+                    The suited cards are 10. The Aces are either 1 or 11 depending on your hand.
+                    To win you need to have under 22 but still higher than the Dealer.
+                    Once you hit the stay button you cannot take any more cards. Good luck!
+                </strong>
+            </p>
+            <button class="colorscheme">Color Scheme</button>
+        </footer>
+    </div>
     <script src="assets/js/script.js"></script>
-    <footer>
-        <p id="rulesexplained"><strong>
-            To win this game you cannot get a total sum above 21.
-            The numbered cards are their normal value. 
-            The suited cards are 10. The Aces are either 1 or 11 depending on your hand. 
-            To win you need to have under 22 but still higher than the Dealer. 
-            Once you hit the stay button you cannot take any more cards. Good luck!
-        </strong>
-        </p>
-    </footer>  
 </body>
+
 </html>
