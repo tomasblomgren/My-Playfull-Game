@@ -169,5 +169,8 @@ function reload() {
     // loadTheGameEngine()
     buildDeck();
     shuffleDeck();
-    startGame();
+
 })()
+onload = function () {
+    startGame();
+}
