@@ -65,14 +65,23 @@ body {
     padding-top: 5px;
 }
 
-.p {
+.article {
     width: 50%;
     margin: 20px;
     border: 20px;
     padding: 20px;
     content: normal;
+    font-weight: bold;
 }
 
+.mark {
+    width: 50%;
+    margin: 20px;
+    border: 20px;
+    padding: 20px;
+    content: normal;
+    font-weight: bold;
+}
 
 .rulesexplained {
     padding: 30px;

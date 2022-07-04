@@ -10,40 +10,45 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
-    <div id="container">
-        <h1>BlackJack</h1>
-        <section>
-            <h2>Dealer: <span id="dealer-sum"></span></h2>
-            <br>
-            <div id="dealer-cards">
-                <img id="hidden" src="/assets/cards/card-deck-backside1.jpg" alt="backside of dealers hidden card">
-            </div>
-        </section>
-        <section>
-            <h2>You: <span id="your-sum"></span></h2>
-            <div id="your-cards"></div>
-        </section>
-        <br>
-        <div class="interactions">
-            <button id="hit">Hit</button>
-            <button id="stay">Stay</button>
-            <button id="reset" onclick="window.location.reload();">Restart</button>
-        </div>
 
-        <footer>
-            <h3 id="results"></h3>
+<body>
+    <main>
+        <div id="container">
+            <h1>BlackJack</h1>
+            <section>
+                <h2>Dealer: <span id="dealer-sum"></span></h2>
+                <br>
+                <div id="dealer-cards">
+                    <img id="hidden" src="/assets/cards/card-deck-backside1.jpg" alt="backside of dealers hidden card">
+                </div>
+            </section>
+            <section>
+                <h2>You: <span id="your-sum"></span></h2>
+                <div id="your-cards"></div>
+            </section>
             <br>
-            <h4>The rules below are important!</h4>
-            <p class="rulesexplained">
-                To win this game you cannot get a total sum above 21.
-                The numbered cards are their normal value.
-                The suited cards are 10. The Aces are either 1 or 11 depending on your hand.
-                To win you need to have under 22 but still higher than the Dealer.
-                Once you hit the stay button you cannot take any more cards and the round is over. Good luck!
-            </p>
-        </footer>
-    </div>
+            <div class="interactions">
+                <button id="hit">Hit</button>
+                <button id="stay">Stay</button>
+                <button id="reset" onclick="window.location.reload();">Restart</button>
+            </div>
+
+            <footer>
+                <h3 id="results">May the best player win!</h3>
+                <br>
+                <h4>The rules below are important!</h4>
+
+                <article class="rulesexplained"><mark>
+                        To win this game you cannot get a total sum above 21.
+                        The numbered cards are their normal value.
+                        The suited cards are 10. The Aces are either 1 or 11 depending on your hand.
+                        To win you need to have under 22 but still higher than the Dealer.
+                        Once you hit the stay button you cannot take any more cards and the round is over. Good luck!
+                    </mark></article>
+
+            </footer>
+        </div>
+    </main>
     <script src="assets/js/script.js"></script>
 </body>
 

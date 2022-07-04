@@ -2,6 +2,13 @@
 
 This version of Blackjack is designed for any and everyone who is feeling lucky and has some time to spare. My idea was to make a version of the game BlackJack to test your luck.  
 
+## User Goals
+- 
+- be able to casually spend some downtime testing a familiar or new game depending on the users previous experience
+- The purpose of the user is to be able figure out how to play the game and beat the computer
+- To be able to tell a good hand from a bad hand and making the descission on whether to take another card or stay
+
+
 ## Rules
 
 The game is played out in the following way. You have an opponent which gives you cards(the house/dealer). The value of the cards are following: all numbered cards have their value displayed as normal(1 = 1 and so on). The suited cards (Jacks Queens and Kings) have the amount 10 and the Ace have either 11 or 1. 
@@ -10,7 +17,7 @@ The goal of the game is to get higher than the valued cards than the house. The 
 Enjoy!
 
 
-## Features
+## In Game Features
 
 The game has 3 onload function that start without having to press any buttons. First it builds the deck and then it shuffles the deck and lastly it starts the game making it possible to press the buttons. 
 
@@ -23,6 +30,12 @@ under the game area there is a restart button which reloads the page and restart
 below the game area there are rules for those not familiar with the game.
 
 ![alt text](/assets/images/screenshot-blackjack.jpg)
+
+### Technical features
+
+- The website is responsive over several screen sizes. such as ipad with screen (1024px width), ipad portrait (768px width) and iphone (375 px width)
+
+
 
 ## Features left to implement
 
@@ -37,11 +50,17 @@ JS Hint returned reload funtion was unused on line 174 in the restart button fun
 
 CSS validator no issues where returned! 
 
+CSS responsinator has been implemented
+
 Jigsaw returned no issues!
 
-### Testing steps
+Devtools returns no issue or errors in the console
+
+### Further Testing 
 
 - 
+
+## Deployment
 
 ## Credits: 
 
