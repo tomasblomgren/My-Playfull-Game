@@ -10,16 +10,6 @@ var deck;
 
 var canHit = true; //allows the player (you) to draw while yourSum <= 21
 
-
-
-function loadTheGameEngine(params) {
-    // rendering the initial page
-    // show start button
-    // show help button
-    // show rules
-}
-
-
 function buildDeck() {
     let values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
     let types = ["C", "D", "H", "S"];
@@ -170,7 +160,7 @@ function reload() {
     buildDeck();
     shuffleDeck();
 
-})()
+})();
 onload = function () {
     startGame();
-}
+};

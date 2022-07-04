@@ -58,10 +58,11 @@ body {
     display: inline-block;
 }
 
-.bet_button {
+#rulebox {
     width: 100px;
     height: 50px;
     font-size: 20px;
+    padding-top: 5px;
 }
 
 .p {
@@ -76,19 +77,17 @@ body {
 .rulesexplained {
     padding: 30px;
     border: 30px;
-    margin: 30px;
     content: inherit;
+    font-weight: 100;
 }
 
-.buttonsforgame {
-    height: 50px;
-    font-size: 20px;
-    text-align: center;
-
+#results {
+    font-size: 35px;
 }
 
-.showtext {
-    display: none;
+h2 {
+    padding: 5px;
+
 }
 
 /* --------- Media queries */
@@ -112,6 +111,21 @@ body {
     .heading {
         font-size: 2rem;
     }
+
+    .container {
+        max-width: 414px;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    #dealer-cards,
+    #your-cards,
+    #hidden {
+        max-width: 414px;
+        max-height: fit-content;
+    }
 }
 
 @media (max-width: 320px) {
@@ -132,4 +146,14 @@ body {
         padding: 10px 0;
     }
 
+    h1 {
+        display: none;
+    }
+
+    #dealer-cards,
+    #your-cards,
+    #hidden {
+        max-width: 320px;
+        max-height: fit-content;
+    }
 }

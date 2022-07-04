@@ -15,6 +15,7 @@
         <h1>BlackJack</h1>
         <section>
             <h2>Dealer: <span id="dealer-sum"></span></h2>
+            <br>
             <div id="dealer-cards">
                 <img id="hidden" src="/assets/cards/card-deck-backside1.jpg" alt="backside of dealers hidden card">
             </div>
@@ -23,29 +24,23 @@
             <h2>You: <span id="your-sum"></span></h2>
             <div id="your-cards"></div>
         </section>
+        <br>
         <div class="interactions">
             <button id="hit">Hit</button>
             <button id="stay">Stay</button>
-
-            <p id="results"></p>
             <button id="reset" onclick="window.location.reload();">Restart</button>
+        </div>
 
-        </div>
-        <div class="buttonsforgame">
-            <button>Startgame</button>
-            <button>Rules</button>
-            <button>Help</button>
-            <button class="colorscheme">Color Scheme</button>
-        </div>
         <footer>
-            <h3>Rules</h3>
-            <p class="rulesexplained"><strong>
-                    To win this game you cannot get a total sum above 21.
-                    The numbered cards are their normal value.
-                    The suited cards are 10. The Aces are either 1 or 11 depending on your hand.
-                    To win you need to have under 22 but still higher than the Dealer.
-                    Once you hit the stay button you cannot take any more cards. Good luck!
-                </strong>
+            <h3 id="results"></h3>
+            <br>
+            <h4>The rules below are important!</h4>
+            <p class="rulesexplained">
+                To win this game you cannot get a total sum above 21.
+                The numbered cards are their normal value.
+                The suited cards are 10. The Aces are either 1 or 11 depending on your hand.
+                To win you need to have under 22 but still higher than the Dealer.
+                Once you hit the stay button you cannot take any more cards and the round is over. Good luck!
             </p>
         </footer>
     </div>

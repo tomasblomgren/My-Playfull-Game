@@ -3,10 +3,12 @@
 This version of Blackjack is designed for any and everyone who is feeling lucky and has some time to spare. My idea was to make a version of the game BlackJack to test your luck.  
 
 ## Rules
+
 The game is played out in the following way. You have an opponent which gives you cards(the house/dealer). The value of the cards are following: all numbered cards have their value displayed as normal(1 = 1 and so on). The suited cards (Jacks Queens and Kings) have the amount 10 and the Ace have either 11 or 1. 
 The goal of the game is to get higher than the valued cards than the house. The highest valued hand is Blackjack with the value of 21. However if you get a higher hand than 22 you "bust" meaning you lose the hand. 
 
 Enjoy!
+
 
 ## Features
 
@@ -19,6 +21,8 @@ you are then given the option based on your cards if you want to stay. This butt
 under the game area there is a restart button which reloads the page and restarts the entire game.
 
 below the game area there are rules for those not familiar with the game.
+
+![alt text](/assets/images/screenshot-blackjack.jpg)
 
 ## Features left to implement
 
@@ -35,7 +39,12 @@ CSS validator no issues where returned!
 
 Jigsaw returned no issues!
 
+### Testing steps
+
+- 
+
 ## Credits: 
+
 Defining deck influenced by : https://www.youtube.com/watch?v=oT49KkhOv-Y&t=11s
 
 Huge credit to Kenny Yip for showing the know how to making this game. Code taken and inspired from: https://www.youtube.com/watch?v=bMYCWccL-3U&t=1384s
@@ -49,8 +58,8 @@ creating an array of cards to make the deck : https://www.thatsoftwaredude.com/c
 
 adding the hit function : https://www.youtube.com/watch?v=AXB9oB5iGs4
 
-
 Information taken from : W3schools.com
+
 ## content 
 
 ## media
