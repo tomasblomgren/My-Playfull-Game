@@ -71,7 +71,7 @@ body {
     border: 20px;
     padding: 20px;
     content: normal;
-    font-weight: bold;
+
 }
 
 .mark {
@@ -80,7 +80,6 @@ body {
     border: 20px;
     padding: 20px;
     content: normal;
-    font-weight: bold;
 }
 
 .rulesexplained {
@@ -105,7 +104,6 @@ h2 {
     .playerscore-area {
         width: 100%;
     }
-
 
     .score-area {
         width: 100%;
@@ -134,6 +132,10 @@ h2 {
     #hidden {
         max-width: 414px;
         max-height: fit-content;
+    }
+
+    .container {
+        height: 100vh;
     }
 }
 
@@ -164,5 +166,6 @@ h2 {
     #hidden {
         max-width: 320px;
         max-height: fit-content;
+
     }
 }

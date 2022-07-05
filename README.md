@@ -3,10 +3,11 @@
 This version of Blackjack is designed for any and everyone who is feeling lucky and has some time to spare. My idea was to make a version of the game BlackJack to test your luck.  
 
 ## User Goals
-- 
+
 - be able to casually spend some downtime testing a familiar or new game depending on the users previous experience
 - The purpose of the user is to be able figure out how to play the game and beat the computer
 - To be able to tell a good hand from a bad hand and making the descission on whether to take another card or stay
+- return in the future when the game has more features
 
 
 ## Rules
@@ -33,15 +34,26 @@ below the game area there are rules for those not familiar with the game.
 
 ### Technical features
 
-- The website is responsive over several screen sizes. such as ipad with screen (1024px width), ipad portrait (768px width) and iphone (375 px width)
+- The website is responsive over several screen sizes. such as ipad with screen (1024px width), ipad portrait (768px width) and iphone (375 px width) and websites above 1024px
 
+- The hit button generates a random card from the deck and cannot select the same card several times
 
+- The stay button ends the round and generates a message based on the player and dealer score
+
+- Favicon picture of a Ace of spades
+
+### Languages used
+- HTML5
+- CSS3
+- Javascript
 
 ## Features left to implement
 
 A feature i was considering adding was a betting function. Which would keep track of your money and upon winning you would get more or lose you bettings on losing. 
 
 Adding the double and split function that is in the original game would have been a nice addition also. 
+
+Creating a toggle light switch for dark background and light background
 
 
 ## Testing
@@ -58,9 +70,27 @@ Devtools returns no issue or errors in the console
 
 ### Further Testing 
 
+- tested on chrome,safari and firefox
+- getting additional input from friends
+
+
+## Known bugs
+
+- on some screen sizes the dealer card section gets pushed up so you cant see the dealer h2
 - 
 
 ## Deployment
+
+### Github pages
+
+This project was deployed to github pages using these steps:
+
+- Log in to GitHub and locate the GitHub Repository
+- At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+- Scroll down the Settings page until you locate the "GitHub Pages" Section.
+- Under "Source", click the dropdown called "None" and select "Master Branch".
+- The page will automatically refresh.
+- Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
 
 ## Credits: 
 
@@ -77,9 +107,9 @@ creating an array of cards to make the deck : https://www.thatsoftwaredude.com/c
 
 adding the hit function : https://www.youtube.com/watch?v=AXB9oB5iGs4
 
-Information taken from : W3schools.com
+Information taken from : W3schools.com on HTML,CSS and Javascript
 
-## content 
+# content 
 
 ## media
 
@@ -93,3 +123,8 @@ Suited cards: https://www.google.com/search?q=full+card+deck+images&rlz=1C1CHBF_
 
 backside displayed in the mainpage : https://www.google.com/search?q=card+deck+backside+image&rlz=1C1CHBF_svSE976SE977&sxsrf=ALiCzsbsdv-qSfwRZ0-CdQpbh-1nn4qELA:1652031157106&source=lnms&tbm=isch&sa=X&sqi=2&ved=2ahUKEwiVxJvSt9D3AhWBG80KHc6gAnQQ_AUoAXoECAEQAw&biw=1536&bih=746&dpr=1.25#imgrc=yRxpW16HekmFiM
 
+## Acknowledgements
+
+- My mentor Narender singh
+- The tutor support on Code Intstitute
+ 
